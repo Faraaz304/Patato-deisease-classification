@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="canonical" href="https://tailwindcomponents.com/component/tailwind-css-file-uplo" itemprop="URL">
+
+    <title>Potato disease Classifier</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+    .predction{
+        font-size: large;
+        font-weight: bold;
+        text-align: center;
+    }
+</style>
+
+
+<body class="bg-black-200">
+
+ 
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <div
+        class="relative min-h-screen flex items-center justify-center bg-black-50 py-12 px-4 sm:px-6 lg:px-8 bg-gray-500 bg-no-repeat bg-cover relative items-center">
+
+        <div class="absolute bg-black opacity-60 inset-0 z-0"></div>
+        <div class="sm:max-w-lg w-full p-10 bg-white rounded-xl z-10">
+            <div class="text-center">
+                <div class="flex">
+
+                </div>
+                
+                <h2 class="mt-5 text-3xl font-bold text-gray-900">
+                    Potato Disease Classifier
+                </h2>
+
+            </div>
+           
+            <form class="mt-8 space-y-3" method="POST" enctype="multipart/form-data">
+                
+                <div class="flex items-center justify-center w-full">
+                    <div>
+                        <img src="/static/img.jpg" alt="Image">
+                    </div>
+                </div>
+                <input type="file" class="" name="img">
+                
+    
+                <p class="text-sm text-gray-300">
+                    <span>RequireFile type: jpg , png , webp</span>
+                </p>
+                <h2 class="predction ">The Predection is : {{ans}}</h2>
+                <div>
+                    <button type="submit"
+                        class="my-5 w-full flex justify-center bg-blue-500 text-gray-100 p-4  rounded-full tracking-widefont-semibold  focus:outline-none focus:shadow-outline hover:bg-blue-600 shadow-lg cursor-pointer transition ease-in duration-300">
+                        Upload
+                    </button>
+                </div>
+            </form>
+
+           
+
+
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
